@@ -87,3 +87,12 @@ h1 {
 .toDO {
 	margin-top: 25px;
 }
+
+.paragraph {
+	margin: 0;
+	cursor: pointer;
+	font-size: 20px;
+	padding: 5px;
+	color: white;
+	border: 1px solid white;
+}
