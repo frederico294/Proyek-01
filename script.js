@@ -29,3 +29,11 @@ addToDo.addEventListener('click', function(){
 var x = document.getElementById("inputField");
 x.addEventListener("focus", myFocusFunction, true);
 x.addEventListener("blur", myBlurFunction, true);
+
+function myFocusFunction() {
+	document.getElementById("inputField").style.backgroundColor = "grey";  
+}
+
+function myBlurFunction() {
+	document.getElementById("inputField").style.backgroundColor = "";  
+}
