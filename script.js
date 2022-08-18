@@ -25,3 +25,7 @@ addToDo.addEventListener('click', function(){
 	  toDoPage.removeChild(paragraph);
 	})
 })
+
+var x = document.getElementById("inputField");
+x.addEventListener("focus", myFocusFunction, true);
+x.addEventListener("blur", myBlurFunction, true);
