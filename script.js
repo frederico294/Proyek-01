@@ -11,3 +11,17 @@ clear.addEventListener("click", function(){
 const options = {weekday : "long", month: "short", day: "numeric"};
 const today = new Date();
 dateElement.innerHTML = today.toLocaleDateString("en-US", options);
+
+addToDo.addEventListener('click', function(){
+	var paragraph = document.createElement('p');
+	paragraph.classList.add('paragraph');
+	paragraph.innerText = inputField.value;
+	toDoPage.appendChild(paragraph);
+	inputField.value = "I want to ";
+	paragraph.addEventListener('click', function(){
+	  paragraph.style.textDecoration = "line-through";
+	})
+	paragraph.addEventListener('dblclick', function(){
+	  toDoPage.removeChild(paragraph);
+	})
+})
